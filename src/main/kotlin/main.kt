@@ -5,11 +5,7 @@ fun main(){
     val discount = 100
     val discountStart = 1_000
 
-    val totalPrise = itemPrice * itemCount
-   val result = if(totalPrise > discountStart){
-        totalPrise -discount
-    } else {
-        totalPrise
-   }
+    val totalPrice = itemPrice * itemCount
+   val result = if(totalPrice > discountStart) totalPrice -discount else totalPrice
     println(result)
 }
